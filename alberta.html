@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deluxe Duct Cleaners — Alberta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- OVERLAY + SIDE MENU -->
+<div class="overlay" id="overlay" onclick="closeSM()"></div>
+<div class="sidemenu" id="sidemenu">
+  <div class="sm-head">
+    <div class="nav-logo"><img src="assets/logo.jpeg" alt="Logo"></div>
+    <button class="sm-close" onclick="closeSM()">&#10005;</button>
+  </div>
+  <div class="sm-links">
+    <a href="#hero" onclick="navigateMobile('hero');return false;">Home</a>
+    <a href="#services" onclick="navigateMobile('services');return false;">Services</a>
+    <a href="#packages" onclick="navigateMobile('packages');return false;">Packages</a>
+    <a href="#reviews" onclick="navigateMobile('reviews');return false;">Reviews</a>
+    <a href="#contact" onclick="navigateMobile('contact');return false;">About Us</a>
+    <div class="sm-divider"></div>
+    <a href="index.html" class="sm-switch">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Switch to Ontario Page
+    </a>
+  </div>
+  <div class="sm-footer">
+    <a href="https://wa.me/14378899124" target="_blank" class="sm-wa">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp Message
+    </a>
+  </div>
+</div>
+
+<!-- TOP NAV -->
+<nav class="topnav" id="topnav">
+  <div class="nav-logo"><img src="assets/logo.jpeg" alt="Logo"></div>
+  <div class="nav-center">
+    <a href="#hero" onclick="scrollToSection('hero');return false;">Home</a>
+    <a href="#services" onclick="scrollToSection('services');return false;">Services</a>
+    <a href="#packages" onclick="scrollToSection('packages');return false;">Packages</a>
+    <a href="#reviews" onclick="scrollToSection('reviews');return false;">Reviews</a>
+    <a href="#contact" onclick="scrollToSection('contact');return false;">About Us</a>
+  </div>
+  <div class="nav-right">
+    <a href="index.html" class="loc-toggle">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Switch to Ontario
+    </a>
+    <a href="tel:+14378899124" class="btn-nav-call">+1 437-889-9124</a>
+    <a href="https://wa.me/14378899124" target="_blank" class="btn-nav-wa">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      WhatsApp
+    </a>
+    <button class="hamburger" onclick="openSM()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- S1: HERO -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="badge">Serving Since 2019 &mdash; Alberta</span>
+      <h1>Professional Air Duct<br>Cleaning in <span>Alberta</span></h1>
+      <p>Breathe cleaner air. Improve HVAC efficiency. Trusted by hundreds of homeowners across Alberta since 2019.</p>
+      <div class="hero-btns">
+        <button class="btn-appt" onclick="scrollToSection('booking')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Make Your Appointment
+        </button>
+        <a href="https://wa.me/14378899124" target="_blank" class="btn-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+      <div class="hero-tags">
+        <div class="hero-tag">Unlimited Duct &amp; Vent Cleaning</div>
+        <div class="hero-tag">Dryer, Furnace &amp; AC Checkup</div>
+        <div class="hero-tag">Natural Sanitizer Included</div>
+        <div class="hero-tag">Same Day Service Available</div>
+      </div>
+    </div>
+    <div class="hero-img">
+    <img src="assets/img1.jpeg" alt="Deluxe Duct Cleaners technician"></div>
+  </div>
+</section>
+
+<!-- S2: PROBLEMS -->
+<section class="section problems-bg" id="problems">
+  <div class="container">
+    <div class="label anim-fade">Is Your Home Affected?</div>
+    <h2 class="title anim-fade">Signs Your Ducts Need <span>Cleaning Now</span></h2>
+    <p class="sub anim-fade">Dirty air ducts silently harm your family's health. Watch for these warning signs.</p>
+    <div class="bento4">
+      <div class="prob-card anim-pop stagger-1">
+        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg></div>
+        <h3>Visible Dust on Vents</h3>
+        <p>Dust and debris building around your vent covers means your ducts are overdue for cleaning.</p>
+      </div>
+      <div class="prob-card anim-pop stagger-2">
+        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <h3>Unexplained Allergies</h3>
+        <p>Persistent sneezing, itchy eyes, or congestion indoors often points to airborne allergens circulating through dirty ducts.</p>
+      </div>
+      <div class="prob-card anim-pop stagger-3">
+        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Rising Energy Bills</h3>
+        <p>Blocked ducts force your HVAC to work harder, increasing energy consumption and monthly costs.</p>
+      </div>
+      <div class="prob-card anim-pop stagger-4">
+        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>Recent Renovation</h3>
+        <p>Construction debris, drywall dust, and sawdust contaminate ducts during home renovations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services-bg" id="services">
+  <div class="container">
+    <div class="label anim-fade">What We Do</div>
+    <h2 class="title anim-fade">Our Professional <span>Cleaning Services</span></h2>
+    <p class="sub anim-fade">Comprehensive air system cleaning for every type of property in Alberta.</p>
+    
+    <div class="svc-layout-container">
+
+      <div class="svc-row">
+        <div class="svc-img anim-left">
+          <img src="assets/img1.jpeg" alt="Air Duct Cleaning">
+        </div>
+        <div class="svc-content anim-right">
+          <h3>Air Duct Cleaning</h3>
+          <p>Improve your indoor air quality with our thorough air duct cleaning service. We remove dust, allergens, and debris from your ductwork to ensure cleaner, healthier air circulation throughout your home or business.</p>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <div class="svc-img anim-left">
+          <img src="assets/img2.png" alt="Dryer Vent Cleaning">
+        </div>
+        <div class="svc-content anim-right">
+          <h3>Dryer Vent Cleaning</h3>
+          <p>Prevent fire hazards and improve dryer efficiency with our professional dryer vent cleaning. We clear lint buildup and blockages to help your dryer run safely, faster, and more efficiently.</p>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <div class="svc-img anim-left">
+          <img src="assets/img3.png" alt="Furnace Cleaning">
+        </div>
+        <div class="svc-content anim-right">
+          <h3>Furnace Cleaning</h3>
+          <p>Keep your heating system running at peak performance. Our furnace cleaning service removes dirt and buildup that can reduce efficiency, helping extend the life of your system and improve indoor air quality.</p>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <div class="svc-img anim-left">
+          <img src="assets/img4.png" alt="HVAC System Cleaning">
+        </div>
+        <div class="svc-content anim-right">
+          <h3>HVAC System Cleaning</h3>
+          <p>Our complete HVAC cleaning service targets every component of your system, ensuring optimal airflow, better energy efficiency, and a cleaner, healthier environment year-round.</p>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <div class="svc-img anim-left">
+          <img src="assets/img5.png" alt="Residential Duct Cleaning">
+        </div>
+        <div class="svc-content anim-right">
+          <h3>Residential Duct Cleaning</h3>
+          <p>Designed for homeowners, our residential duct cleaning service eliminates dust, allergens, and contaminants from your home’s ventilation system, creating a safer and fresher living space for your family.</p>
+        </div>
+      </div>
+
+      <div class="svc-row">
+        <div class="svc-img anim-left">
+          <img src="assets/img6.png" alt="Commercial Duct Cleaning">
+        </div>
+        <div class="svc-content anim-right">
+          <h3>Commercial Duct Cleaning</h3>
+          <p>We provide reliable commercial duct cleaning for offices, retail spaces, and industrial buildings. Improve air quality, maintain compliance, and create a healthier environment for employees and customers.</p>
+        </div>
+      </div>
+
+      </div>
+  </div>
+</section>
+
+<!-- S4: PACKAGES -->
+<section class="section packages-bg" id="packages">
+  <div class="container">
+    <div class="label anim-fade">Transparent Pricing</div>
+    <h2 class="title anim-fade">Choose the Right Package <span>for Your Home</span></h2>
+    <p class="sub anim-fade">All packages include our natural disinfectant sanitizer. No hidden fees, ever.</p>
+    <div class="pkg-grid">
+      <div class="pkg-card anim-pop stagger-1">
+        <div class="pkg-name">Essential</div>
+        <div class="pkg-tag">Perfect for smaller homes</div>
+        <div class="pkg-price">
+          <div class="pkg-from">Starting from</div>
+          <div class="pkg-amount">$139</div>
+          <div class="pkg-note">Up to 8 vents included</div>
+        </div>
+        <div class="pkg-div"></div>
+        <ul class="pkg-features">
+          <li>Air duct &amp; vent cleaning (up to 8)</li>
+          <li>Natural disinfectant sanitizer</li>
+          <li>Before &amp; after photos</li>
+          <li>Dryer vent inspection</li>
+        </ul>
+        <a href="https://wa.me/14378899124" target="_blank" class="pkg-btn pkg-outline">Book via WhatsApp</a>
+      </div>
+      <div class="pkg-card featured anim-pop stagger-2">
+        <div class="pkg-name">Complete</div>
+        <div class="pkg-tag">Best value for families</div>
+        <div class="pkg-price">
+          <div class="pkg-from">Starting from</div>
+          <div class="pkg-amount">$229</div>
+          <div class="pkg-note">Unlimited vents</div>
+        </div>
+        <div class="pkg-div"></div>
+        <ul class="pkg-features">
+          <li>Unlimited air duct &amp; vent cleaning</li>
+          <li>Dryer vent cleaning</li>
+          <li>Furnace &amp; AC checkup</li>
+          <li>Natural disinfectant sanitizer</li>
+          <li>Before &amp; after photos</li>
+          <li>Same day availability</li>
+        </ul>
+        <a href="https://wa.me/14378899124" target="_blank" class="pkg-btn pkg-fill">Book Now</a>
+      </div>
+      <div class="pkg-card anim-pop stagger-3">
+        <div class="pkg-name">Premium</div>
+        <div class="pkg-tag">Total home air health</div>
+        <div class="pkg-price">
+          <div class="pkg-from">Starting from</div>
+          <div class="pkg-amount">$329</div>
+          <div class="pkg-note">Full system service</div>
+        </div>
+        <div class="pkg-div"></div>
+        <ul class="pkg-features">
+          <li>Everything in Complete</li>
+          <li>Full HVAC system cleaning</li>
+          <li>Furnace deep clean</li>
+          <li>Priority same-day booking</li>
+          <li>12-month service guarantee</li>
+          <li>Free follow-up inspection</li>
+        </ul>
+        <a href="https://wa.me/14378899124" target="_blank" class="pkg-btn pkg-outline">Book via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-row">
+    <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Homes Cleaned in Alberta</div></div>
+    <div class="stat-item"><div class="stat-num">5&#9733;</div><div class="stat-label">Average Rating</div></div>
+    <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Satisfaction Guaranteed</div></div>
+    <div class="stat-item"><div class="stat-num">2019</div><div class="stat-label">Serving Since</div></div>
+  </div>
+</div>
+
+
+<section class="section reviews-bg" id="reviews">
+  <div class="container">
+    <div class="label anim-fade">Real Customers</div>
+    <h2 class="title anim-fade">What Your Neighbors in <span>Alberta</span> Are Saying </h2>
+    <p class="sub anim-fade">Hundreds of homeowners across Alberta trust Deluxe Duct Cleaners.
+
+</p>
+    
+    <div class="reviews-accordion-container">
+      
+<div class="rev-accordion-item" style="background-image: url('assets/c1.jpg');">        <div class="rev-overlay"></div>
+        <div class="rev-collapsed-name">David W.</div>
+        <div class="rev-expanded-content">
+          <span class="rev-tag">Deluxe Homeowner</span>
+          <h3>David W.</h3>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rev-quote">"Best duct cleaning service in Calgary."</p>
+          <p class="rev-fulltext">Fast, friendly, and the air in our home feels completely different. Highly recommend to anyone in the area.</p>
+          <div class="rev-location">Calgary, AB</div>
+        </div>
+      </div>
+
+<div class="rev-accordion-item" style="background-image: url('assets/c2.jpg');">        <div class="rev-overlay"></div>
+        <div class="rev-collapsed-name">Kiran S.</div>
+        <div class="rev-expanded-content">
+          <span class="rev-tag">Furnace Restoration</span>
+          <h3>Kiran S.</h3>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rev-quote">"Our furnace is running better than ever."</p>
+          <p class="rev-fulltext">Alberta winters are brutal on our furnace. Deluxe came out and did a complete clean, and the difference all season has been incredible.</p>
+          <div class="rev-location">Edmonton, AB</div>
+        </div>
+      </div>
+
+<div class="rev-accordion-item" style="background-image: url('assets/c3.jpg');">        <div class="rev-overlay"></div>
+        <div class="rev-collapsed-name">Nicole B.</div>
+        <div class="rev-expanded-content">
+          <span class="rev-tag">Verified Review</span>
+          <h3>Nicole B.</h3>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rev-quote">"No hidden charges, every vent cleaned."</p>
+          <p class="rev-fulltext">Professional team from start to finish. They cleaned every single vent and the natural sanitizer left the whole house smelling fresh.</p>
+          <div class="rev-location">Red Deer, AB</div>
+        </div>
+      </div>
+
+<div class="rev-accordion-item" style="background-image: url('assets/c4.jpg');">        <div class="rev-overlay"></div>
+        <div class="rev-collapsed-name">Faisal M.</div>
+        <div class="rev-expanded-content">
+          <span class="rev-tag">Quick Response</span>
+          <h3>Faisal M.</h3>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rev-quote">"Same-day service is real."</p>
+          <p class="rev-fulltext">Called them at 9am and they were at my house by noon. Quick turnaround and the quality of work was outstanding.</p>
+          <div class="rev-location">Calgary, AB</div>
+        </div>
+      </div>
+
+<div class="rev-accordion-item" style="background-image: url('assets/c5.jpg');">        <div class="rev-overlay"></div>
+        <div class="rev-collapsed-name">Priya K.</div>
+        <div class="rev-expanded-content">
+          <span class="rev-tag">Transparent Care</span>
+          <h3>Priya K.</h3>
+          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rev-quote">"Booked via WhatsApp — seamless."</p>
+          <p class="rev-fulltext">Booked the night before through WhatsApp. They confirmed within minutes and arrived right on time. Couldn't have been easier.</p>
+          <div class="rev-location">Calgary, AB</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- S6: CONTACT + MAP -->
+<section class="section contact-bg" id="contact">
+  <div class="container">
+    <div class="label anim-fade">Local &amp; Trusted</div>
+    <h2 class="title anim-fade">About Us — <span>Alberta</span></h2>
+    <p class="sub anim-fade">Locally operated, professionally trained, and committed to clean air since 2019.</p>
+    <div class="contact-layout">
+      <div class="contact-card anim-left">
+        <h3>Contact Information</h3>
+        <div class="ci">
+          <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.09 5.18 2 2 0 015.07 3h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div class="ci-text"><h4>Phone</h4><a href="tel:+14378899124">+1 437-889-9124</a></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div class="ci-text"><h4>Email</h4><a href="mailto:info@deluxeductcleaners.ca">info@deluxeductcleaners.ca</a></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="ci-text"><h4>Service Area</h4><p>Calgary &amp; Edmonton, Alberta</p></div>
+        </div>
+        <div class="ci">
+          <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="ci-text"><h4>Facebook</h4><a href="https://www.facebook.com/DeluxeDuct.Cleaners" target="_blank">DeluxeDuct.Cleaners</a></div>
+        </div>
+        <span class="since-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Reliably Serving Alberta Since 2019
+        </span>
+      </div>
+      <div class="map-frame anim-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2891767!2d-114.0719!3d51.0447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1700000000001!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S7: BOOKING -->
+<section class="section booking-bg" id="booking">
+  <div class="container">
+    <div class="label">Book Now</div>
+    <h2 class="title">Book Your Schedule in <span style="color:var(--green)">Less Than 60 Seconds</span></h2>
+    <p class="sub">Fill in the form below and we will confirm your Alberta appointment within the hour.</p>
+    <div class="form-wrap">
+      <div class="form-grid">
+        <input class="finput" type="text" placeholder="Your Full Name" id="fname" required>
+        <input class="finput" type="tel" placeholder="Phone Number" id="fphone" required>
+        <input class="finput full" type="email" placeholder="Email Address" id="femail" required>
+        <select class="finput" id="fservice" required>
+          <option value="" disabled selected>Service Needed</option>
+          <option>Air Duct Cleaning</option>
+          <option>Dryer Vent Cleaning</option>
+          <option>Furnace Cleaning</option>
+          <option>HVAC System Cleaning</option>
+          <option>Full Package</option>
+        </select>
+        <input class="finput" type="date" placeholder="Preferred Date" id="fdate" required>
+        <textarea class="finput full" rows="3" placeholder="Additional notes or questions..." id="fnotes"></textarea>
+        <button class="fsub full" onclick="handleBook(this)">Submit Appointment Request</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to Breathe <span>Cleaner Air?</span></h2>
+    <p>Same day service available. Call or message us now.</p>
+    <div class="cta-btns">
+      <a href="tel:+14378899124" class="btn-cta-green">Call +1 437-889-9124</a>
+      <a href="https://wa.me/14378899124" target="_blank" class="btn-cta-wa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span>Deluxe</span> Duct Cleaners</div>
+      <p style="font-size:.87rem;line-height:1.65;">Professional duct cleaning across Alberta. Clean air, healthy homes — since 2019.</p>
+      <div style="margin-top:16px;">
+        <a href="https://www.facebook.com/DeluxeDuct.Cleaners" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.6);text-decoration:none;font-weight:700;font-size:.86rem;transition:color .2s;" onmouseover="this.style.color='#1877f2'" onmouseout="this.style.color='rgba(255,255,255,.6)'">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Follow on Facebook
+        </a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul>
+        <li>Air Duct Cleaning</li>
+        <li>Dryer Vent Cleaning</li>
+        <li>Furnace Cleaning</li>
+        <li>HVAC System Cleaning</li>
+        <li>Residential Cleaning</li>
+        <li>Commercial Cleaning</li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact — Alberta</h4>
+      <div class="fci"><div class="fci-icon">&#9742;</div><a href="tel:+14378899124">+1 437-889-9124</a></div>
+      <div class="fci"><div class="fci-icon">&#9993;</div><a href="mailto:info@deluxeductcleaners.ca">info@deluxeductcleaners.ca</a></div>
+      <div class="fci"><div class="fci-icon">&#9679;</div><span>Calgary &amp; Edmonton, Alberta</span></div>
+      <div class="fci" style="margin-top:8px;"><div class="fci-icon" style="background:rgba(109,189,44,.2);">&#10003;</div><span style="color:var(--green);font-weight:700;">Serving Since 2019</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2025 Deluxe Duct Cleaners. All rights reserved.</span>
+   <!-- <a href="index.html" onclick="location.reload();return false;" style="color:rgba(255,255,255,.5);text-decoration:none;font-weight:700;">&#8592; Change Province</a> -->
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
