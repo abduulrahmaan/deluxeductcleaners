@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Deluxe Duct Cleaners — Ontario</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="icon" type="image/x-icon" href="assets/favicon.svg">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="32x32">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -24,6 +25,8 @@
     <a href="#packages" onclick="navigateMobile('packages');return false;">Packages</a>
     <a href="#reviews" onclick="navigateMobile('reviews');return false;">Reviews</a>
     <a href="#contact" onclick="navigateMobile('contact');return false;">About Us</a>
+    <a href="#cta-band" onclick="navigateMobile('cta-band');return false;">Contact Us</a>
+
     <div class="sm-divider"></div>
     <a href="alberta.html" class="sm-switch">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -47,6 +50,7 @@
     <a href="#packages" onclick="scrollToSection('packages');return false;">Packages</a>
     <a href="#reviews" onclick="scrollToSection('reviews');return false;">Reviews</a>
     <a href="#contact" onclick="scrollToSection('contact');return false;">About Us</a>
+    <a href="#cta-band" onclick="scrollToSection('cta-band');return false;">Contact Us</a>
   </div>
   <div class="nav-right">
     <a href="alberta.html" class="loc-toggle">
@@ -97,102 +101,152 @@
     <div class="label anim-fade">Is Your Home Affected?</div>
     <h2 class="title anim-fade">Signs Your Ducts Need <span>Cleaning Now</span></h2>
     <p class="sub anim-fade">Dirty air ducts silently harm your family's health. Watch for these warning signs.</p>
-    <div class="bento4">
-      <div class="prob-card anim-pop stagger-1">
-        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12h8M12 8v8"/></svg></div>
-        <h3>Visible Dust on Vents</h3>
-        <p>Dust and debris building around your vent covers means your ducts are overdue for cleaning.</p>
+    <div class="problem-row">
+
+  <div class="problem-item reveal">
+    <div class="problem-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+        <path d="M8 12h8M12 8v8"/>
+      </svg>
+    </div>
+
+    <div class="problem-content">
+      <h3>Visible Dust on Vents</h3>
+      <p>Dust and debris building around your vent covers means your ducts are overdue for cleaning.</p>
+    </div>
+  </div>
+
+  <div class="problem-item reveal">
+    <div class="problem-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2">
+        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+      </svg>
+    </div>
+
+    <div class="problem-content">
+      <h3>Unexplained Allergies</h3>
+      <p>Persistent sneezing, itchy eyes, or congestion indoors often points to airborne allergens circulating through dirty ducts.</p>
+    </div>
+  </div>
+
+  <div class="problem-item reveal">
+    <div class="problem-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+      </svg>
+    </div>
+
+    <div class="problem-content">
+      <h3>Rising Energy Bills</h3>
+      <p>Blocked ducts force your HVAC to work harder, increasing energy consumption and monthly costs.</p>
+    </div>
+  </div>
+
+  <div class="problem-item reveal">
+    <div class="problem-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+    </div>
+
+    <div class="problem-content">
+      <h3>Recent Renovation</h3>
+      <p>Construction debris, drywall dust, and sawdust contaminate ducts during home renovations.</p>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+<!--SERVICES-->
+<section class="section services-bg" id="services">
+  <div class="container">
+    <div class="label anim-fade" style="text-align: center;">What We Do</div>
+    <h2 class="title anim-fade" style="text-align: center;">Our Professional <span>Cleaning Services</span></h2>
+    <p class="sub anim-fade" style="text-align: center; max-width: 650px; margin: 0 auto 50px auto;">Comprehensive air system cleaning for every type of property.</p>
+    
+    <div class="svc-stack-container">
+
+      <div class="svc-card theme-blue-light">
+        <div class="svc-card-body">
+          <div class="svc-content">
+            <h3>Air Duct <span>Cleaning</span></h3>
+            <p>Improve your indoor air quality with our thorough air duct cleaning service. We remove dust, allergens, and debris from your ductwork to ensure cleaner, healthier air circulation throughout your home or business.</p>
+          </div>
+          <div class="svc-img">
+            <img src="assets/img1.jpeg" alt="Air Duct Cleaning">
+          </div>
+        </div>
       </div>
-      <div class="prob-card anim-pop stagger-2">
-        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
-        <h3>Unexplained Allergies</h3>
-        <p>Persistent sneezing, itchy eyes, or congestion indoors often points to airborne allergens circulating through dirty ducts.</p>
+
+      <div class="svc-card theme-green-light">
+        <div class="svc-card-body">
+          <div class="svc-content">
+            <h3>Dryer Vent <span>Cleaning</span></h3>
+            <p>Prevent fire hazards and improve dryer efficiency with our professional dryer vent cleaning. We clear lint buildup and blockages to help your dryer run safely, faster, and more efficiently.</p>
+          </div>
+          <div class="svc-img">
+            <img src="assets/img2.png" alt="Dryer Vent Cleaning">
+          </div>
+        </div>
       </div>
-      <div class="prob-card anim-pop stagger-3">
-        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <h3>Rising Energy Bills</h3>
-        <p>Blocked ducts force your HVAC to work harder, increasing energy consumption and monthly costs.</p>
+
+      <div class="svc-card theme-white">
+        <div class="svc-card-body">
+          <div class="svc-content">
+            <h3>Furnace <span>Cleaning</span></h3>
+            <p>Keep your heating system running at peak performance. Our furnace cleaning service removes dirt and buildup that can reduce efficiency, helping extend the life of your system and improve indoor air quality.</p>
+          </div>
+          <div class="svc-img">
+            <img src="assets/img3.png" alt="Furnace Cleaning">
+          </div>
+        </div>
       </div>
-      <div class="prob-card anim-pop stagger-4">
-        <div class="picon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
-        <h3>Recent Renovation</h3>
-        <p>Construction debris, drywall dust, and sawdust contaminate ducts during home renovations.</p>
+
+      <div class="svc-card theme-blue-light">
+        <div class="svc-card-body">
+          <div class="svc-content">
+            <h3>HVAC System <span>Cleaning</span></h3>
+            <p>Our complete HVAC cleaning service targets every component of your system, ensuring optimal airflow, better energy efficiency, and a cleaner, healthier environment year-round.</p>
+          </div>
+          <div class="svc-img">
+            <img src="assets/img4.png" alt="HVAC System Cleaning">
+          </div>
+        </div>
       </div>
+
+      <div class="svc-card theme-green-light">
+        <div class="svc-card-body">
+          <div class="svc-content">
+            <h3>Residential <span>Duct Cleaning</span></h3>
+            <p>Designed for homeowners, our residential duct cleaning service eliminates dust, allergens, and contaminants from your home’s ventilation system, creating a safer and fresher living space for your family.</p>
+          </div>
+          <div class="svc-img">
+            <img src="assets/img5.png" alt="Residential Duct Cleaning">
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-card theme-white">
+        <div class="svc-card-body">
+          <div class="svc-content">
+            <h3>Commercial <span>Duct Cleaning</span></h3>
+            <p>We provide reliable commercial duct cleaning for offices, retail spaces, and industrial buildings. Improve air quality, maintain compliance, and create a healthier environment for employees and customers.</p>
+          </div>
+          <div class="svc-img">
+            <img src="assets/img6.png" alt="Commercial Duct Cleaning">
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="section services-bg" id="services">
-  <div class="container">
-    <div class="label anim-fade">What We Do</div>
-    <h2 class="title anim-fade">Our Professional <span>Cleaning Services</span></h2>
-    <p class="sub anim-fade">Comprehensive air system cleaning for every type of property in Ontario.</p>
-    
-    <div class="svc-layout-container">
-
-      <div class="svc-row">
-        <div class="svc-img anim-left">
-          <img src="assets/img1.jpeg" alt="Air Duct Cleaning">
-        </div>
-        <div class="svc-content anim-right">
-          <h3>Air Duct Cleaning</h3>
-          <p>Improve your indoor air quality with our thorough air duct cleaning service. We remove dust, allergens, and debris from your ductwork to ensure cleaner, healthier air circulation throughout your home or business.</p>
-        </div>
-      </div>
-
-      <div class="svc-row">
-        <div class="svc-img anim-left">
-          <img src="assets/img2.png" alt="Dryer Vent Cleaning">
-        </div>
-        <div class="svc-content anim-right">
-          <h3>Dryer Vent Cleaning</h3>
-          <p>Prevent fire hazards and improve dryer efficiency with our professional dryer vent cleaning. We clear lint buildup and blockages to help your dryer run safely, faster, and more efficiently.</p>
-        </div>
-      </div>
-
-      <div class="svc-row">
-        <div class="svc-img anim-left">
-          <img src="assets/img3.png" alt="Furnace Cleaning">
-        </div>
-        <div class="svc-content anim-right">
-          <h3>Furnace Cleaning</h3>
-          <p>Keep your heating system running at peak performance. Our furnace cleaning service removes dirt and buildup that can reduce efficiency, helping extend the life of your system and improve indoor air quality.</p>
-        </div>
-      </div>
-
-      <div class="svc-row">
-        <div class="svc-img anim-left">
-          <img src="assets/img4.png" alt="HVAC System Cleaning">
-        </div>
-        <div class="svc-content anim-right">
-          <h3>HVAC System Cleaning</h3>
-          <p>Our complete HVAC cleaning service targets every component of your system, ensuring optimal airflow, better energy efficiency, and a cleaner, healthier environment year-round.</p>
-        </div>
-      </div>
-
-      <div class="svc-row">
-        <div class="svc-img anim-left">
-          <img src="assets/img5.png" alt="Residential Duct Cleaning">
-        </div>
-        <div class="svc-content anim-right">
-          <h3>Residential Duct Cleaning</h3>
-          <p>Designed for homeowners, our residential duct cleaning service eliminates dust, allergens, and contaminants from your home’s ventilation system, creating a safer and fresher living space for your family.</p>
-        </div>
-      </div>
-
-      <div class="svc-row">
-        <div class="svc-img anim-left">
-          <img src="assets/img6.png" alt="Commercial Duct Cleaning">
-        </div>
-        <div class="svc-content anim-right">
-          <h3>Commercial Duct Cleaning</h3>
-          <p>We provide reliable commercial duct cleaning for offices, retail spaces, and industrial buildings. Improve air quality, maintain compliance, and create a healthier environment for employees and customers.</p>
-        </div>
-      </div>
-
-      </div>
-  </div>
-</section>
 
 <!-- S4: PACKAGES -->
 <section class="section packages-bg" id="packages">
@@ -272,90 +326,151 @@
   </div>
 </div>
 
+<!--REVIEWS-->
+<div class="container">
+  <div class="label anim-fade" style="padding-top: 30px;">Real Customers</div>
+  <h2 class="title anim-fade">What Your Neighbors in <span>Ontario</span> Are Saying </h2>
+  <p class="sub anim-fade">Hundreds of homeowners across Ontario trust Deluxe Duct Cleaners.</p>
 
-<section class="section reviews-bg" id="reviews">
-  <div class="container">
-    <div class="label anim-fade">Real Customers</div>
-    <h2 class="title anim-fade">What Your Neighbors in <span>Ontario</span> Are Saying </h2>
-    <p class="sub anim-fade">Hundreds of homeowners across Ontario trust Deluxe Duct Cleaners.
-
-</p>
+  <div class="reviews-marquee-track">
     
-    <div class="reviews-accordion-container">
+    <div class="rev-marquee-col scroll-up">
+      <div class="rev-marquee-group">
+        <div class="rev-float-card theme-blue">
+          <div class="rev-card-header">
+            <div class="rev-avatar">AM</div>
+            <div class="rev-meta"><h3>Andrew M.</h3><div class="rev-location">Toronto, ON</div></div>
+            <span class="rev-badge-tag">Deluxe Homeowner</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Best duct cleaning service in Toronto."</p>
+          <p class="rev-fulltext">Fast, friendly, and the air in our downtown home feels completely different. Highly recommend to anyone in the GTA.</p>
+        </div>
+        <div class="rev-float-card theme-white">
+          <div class="rev-card-header">
+            <div class="rev-avatar">SD</div>
+            <div class="rev-meta"><h3>Sobia D.</h3><div class="rev-location">Mississauga, ON</div></div>
+            <span class="rev-badge-tag">Quick Response</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Same-day service is real."</p>
+          <p class="rev-fulltext">Called them at 8:30am and they were at my house in Mississauga before noon. Quick turnaround and outstanding work quality.</p>
+        </div>
+      </div>
       
-<div class="rev-accordion-item" style="background-image: url('assets/c1.jpg');">        >
-        <div class="rev-overlay"></div>
-        <div class="rev-collapsed-name">Sarah A.</div>
-        <div class="rev-expanded-content">
-          <span class="rev-tag">Deluxe Homeowner</span>
-          <h3>Sarah A.</h3>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-quote">"My children have asthma."</p>
-          <p class="rev-fulltext">Incredible service. My home smells so much fresher and my kids stopped waking up with stuffy noses. Worth every penny.</p>
-          <div class="rev-location">Mississauga, ON</div>
+      <div class="rev-marquee-group" aria-hidden="true">
+        <div class="rev-float-card theme-blue">
+          <div class="rev-card-header">
+            <div class="rev-avatar">AM</div>
+            <div class="rev-meta"><h3>Andrew M.</h3><div class="rev-location">Toronto, ON</div></div>
+            <span class="rev-badge-tag">Deluxe Homeowner</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Best duct cleaning service in Toronto."</p>
+          <p class="rev-fulltext">Fast, friendly, and the air in our downtown home feels completely different. Highly recommend to anyone in the GTA.</p>
+        </div>
+        <div class="rev-float-card theme-white">
+          <div class="rev-card-header">
+            <div class="rev-avatar">SD</div>
+            <div class="rev-meta"><h3>Sobia D.</h3><div class="rev-location">Mississauga, ON</div></div>
+            <span class="rev-badge-tag">Quick Response</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Same-day service is real."</p>
+          <p class="rev-fulltext">Called them at 8:30am and they were at my house in Mississauga before noon. Quick turnaround and outstanding work quality.</p>
         </div>
       </div>
-
-<div class="rev-accordion-item" style="background-image: url('assets/c2.jpg');">       
-        <div class="rev-overlay"></div>
-        <div class="rev-collapsed-name">Mick K.</div>
-        <div class="rev-expanded-content">
-          <span class="rev-tag">Verified Review</span>
-          <h3>Michael K.</h3>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-quote">"The difference was shocking."</p>
-          <p class="rev-fulltext">The team was on time, professional, and thorough. They showed me before and after photos.</p>
-          <div class="rev-location">Brampton, ON</div>
-        </div>
-      </div>
-
-<div class="rev-accordion-item" style="background-image: url('assets/c3.jpg');">         <div class="rev-overlay"></div>
-        <div class="rev-collapsed-name">Jenny L.</div>
-        <div class="rev-expanded-content">
-          <span class="rev-tag">Quick Response</span>
-          <h3>Jennifer L.</h3>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-quote">"Fast, clean, and no mess."</p>
-          <p class="rev-fulltext">Booked via WhatsApp, they came same day. Highly recommend.</p>
-          <div class="rev-location">Toronto, ON</div>
-        </div>
-      </div>
-
-<div class="rev-accordion-item" style="background-image: url('assets/c4.jpg');">         <div class="rev-overlay"></div>
-        <div class="rev-collapsed-name">Raj P.</div>
-        <div class="rev-expanded-content">
-          <span class="rev-tag">HVAC Restoration</span>
-          <h3>Raj P.</h3>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-quote">"Energy bill dropped noticeably."</p>
-          <p class="rev-fulltext">My HVAC was barely pushing air. After Deluxe cleaned it, the airflow is like new.</p>
-          <div class="rev-location">Vaughan, ON</div>
-        </div>
-      </div>
-
-<div class="rev-accordion-item" style="background-image: url('assets/c5.jpg');">         <div class="rev-overlay"></div>
-        <div class="rev-collapsed-name">Tariq</div>
-        <div class="rev-expanded-content">
-          <span class="rev-tag">Transparent Care</span>
-          <h3>Tariq N.</h3>
-          <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          <p class="rev-quote">"Finally a company I can trust."</p>
-          <p class="rev-fulltext">Transparent pricing, no upsells, honest team. Booked them again for my parents house.</p>
-          <div class="rev-location">Markham, ON</div>
-        </div>
-      </div>
-
     </div>
+
+    <div class="rev-marquee-col scroll-down">
+      <div class="rev-marquee-group">
+        <div class="rev-float-card theme-green">
+          <div class="rev-card-header">
+            <div class="rev-avatar">RH</div>
+            <div class="rev-meta"><h3>Ryan H.</h3><div class="rev-location">Brampton, ON</div></div>
+            <span class="rev-badge-tag">Furnace Restoration</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Our furnace is running better than ever."</p>
+          <p class="rev-fulltext">Ontario winters can get freezing. Deluxe came out and did a complete system clean, and the air flow difference has been incredible. Already notice the lower utility bills!</p>
+        </div>
+      </div>
+      
+      <div class="rev-marquee-group" aria-hidden="true">
+        <div class="rev-float-card theme-green">
+          <div class="rev-card-header">
+            <div class="rev-avatar">RH</div>
+            <div class="rev-meta"><h3>Ryan H.</h3><div class="rev-location">Brampton, ON</div></div>
+            <span class="rev-badge-tag">Furnace Restoration</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Our furnace is running better than ever."</p>
+          <p class="rev-fulltext">Ontario winters can get freezing. Deluxe came out and did a complete system clean, and the air flow difference has been incredible. Already notice the lower utility bills!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rev-marquee-col scroll-up">
+      <div class="rev-marquee-group">
+        <div class="rev-float-card theme-white">
+          <div class="rev-card-header">
+            <div class="rev-avatar">LN</div>
+            <div class="rev-meta"><h3>Lisa N.</h3><div class="rev-location">Hamilton, ON</div></div>
+            <span class="rev-badge-tag">Verified Review</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"No hidden charges, every vent cleaned."</p>
+          <p class="rev-fulltext">Professional team from start to finish. They checked every single vent branch and the natural sanitizer left our home smelling fresh.</p>
+        </div>
+        <div class="rev-float-card theme-blue">
+          <div class="rev-card-header">
+            <div class="rev-avatar">KP</div>
+            <div class="rev-meta"><h3>Kevin P.</h3><div class="rev-location">Markham, ON</div></div>
+            <span class="rev-badge-tag">Transparent Care</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Booked via WhatsApp — seamless."</p>
+          <p class="rev-fulltext">Messaged them late the night before through WhatsApp. They confirmed within minutes and arrived right on time. Couldn't have been easier.</p>
+        </div>
+      </div>
+      
+      <div class="rev-marquee-group" aria-hidden="true">
+        <div class="rev-float-card theme-white">
+          <div class="rev-card-header">
+            <div class="rev-avatar">LN</div>
+            <div class="rev-meta"><h3>Lisa N.</h3><div class="rev-location">Hamilton, ON</div></div>
+            <span class="rev-badge-tag">Verified Review</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"No hidden charges, every vent cleaned."</p>
+          <p class="rev-fulltext">Professional team from start to finish. They checked every single vent branch and the natural sanitizer left our home smelling fresh.</p>
+        </div>
+        <div class="rev-float-card theme-blue">
+          <div class="rev-card-header">
+            <div class="rev-avatar">KP</div>
+            <div class="rev-meta"><h3>Kevin P.</h3><div class="rev-location">Markham, ON</div></div>
+            <span class="rev-badge-tag">Transparent Care</span>
+          </div>
+          <div class="stars">★★★★★</div>
+          <p class="rev-quote">"Booked via WhatsApp — seamless."</p>
+          <p class="rev-fulltext">Messaged them late the night before through WhatsApp. They confirmed within minutes and arrived right on time. Couldn't have been easier.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
+</div>
 </section>
 
 <!-- S6: CONTACT + MAP -->
 <section class="section contact-bg" id="contact">
   <div class="container">
-    <div class="label anim-fade">Local &amp; Trusted</div>
+    <div class="label anim-fade">Local & Trusted</div>
     <h2 class="title anim-fade">About Us — <span>Ontario</span></h2>
     <p class="sub anim-fade">Locally operated, professionally trained, and committed to clean air since 2019.</p>
+    
     <div class="contact-layout">
+      
       <div class="contact-card anim-left">
         <h3>Contact Information</h3>
         <div class="ci">
@@ -368,21 +483,58 @@
         </div>
         <div class="ci">
           <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div class="ci-text"><h4>Service Area</h4><p>Greater Toronto Area, Ontario</p></div>
+          <div class="ci-text"><h4>Service Area</h4><p>Greater Toronto Area & Major Cities, Ontario</p></div>
         </div>
         <div class="ci">
           <div class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
           <div class="ci-text"><h4>Facebook</h4><a href="https://www.facebook.com/DeluxeDuct.Cleaners" target="_blank">DeluxeDuct.Cleaners</a></div>
         </div>
+                <div class="ci">
+  <div class="ci-icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2E7DD1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+  </div>
+  <div class="ci-text">
+    <h4>Instagram</h4>
+    <a href="www.instagram.com" target="_blank">@Coming Soon!</a>
+  </div>
+</div>
         <span class="since-badge">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Reliably Serving Ontario Since 2019
         </span>
       </div>
+      
       <div class="map-frame anim-right">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2936768!2d-79.3832!3d43.6532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5757973.963495444!2d-86.07176189914757!3d47.200155099899324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cbd290be3da78d3%3A0x3f5c71d07bc5c929!2sOntario!5e0!3m2!1sen!2sca!4v1718490000000!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+    </div>
+
+    <div class="areas-covered-box anim-fade" style="margin-top: 40px;">
+      <h3 class="areas-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2.5" style="margin-right: 8px; vertical-align: middle;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Service Areas & Cities Covered in Ontario
+      </h3>
+      <div class="city-grid">
+        <div class="city-badge">Toronto</div>
+        <div class="city-badge">Mississauga</div>
+        <div class="city-badge">Brampton</div>
+        <div class="city-badge">Hamilton</div>
+        <div class="city-badge">Markham</div>
+        <div class="city-badge">Vaughan</div>
+        <div class="city-badge">Kitchener</div>
+        <div class="city-badge">London</div>
+        <div class="city-badge">Oshawa</div>
+        <div class="city-badge">Barrie</div>
+        <div class="city-badge">Guelph</div>
+        <div class="city-badge">Kingston</div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -397,24 +549,59 @@
         <input class="finput" type="text" placeholder="Your Full Name" id="fname" required>
         <input class="finput" type="tel" placeholder="Phone Number" id="fphone" required>
         <input class="finput full" type="email" placeholder="Email Address" id="femail" required>
-        <select class="finput" id="fservice" required>
-          <option value="" disabled selected>Service Needed</option>
-          <option>Air Duct Cleaning</option>
-          <option>Dryer Vent Cleaning</option>
-          <option>Furnace Cleaning</option>
-          <option>HVAC System Cleaning</option>
-          <option>Full Package</option>
-        </select>
+        <div class="finput full ms-wrapper">
+  <label class="ms-label">Select Services Needed <span class="ms-sublabel">(Tap all that apply)</span></label>
+  
+  <div class="ms-grid-container">
+    <div class="ms-card-chip" data-value="Air Duct Cleaning" onclick="toggleChip(this)">
+      <div class="chip-icon"></div>
+      <div class="chip-text">Air Duct Cleaning</div>
+      <div class="chip-checkbox"></div>
+    </div>
+
+    <div class="ms-card-chip" data-value="Dryer Vent Cleaning" onclick="toggleChip(this)">
+      <div class="chip-icon"></div>
+      <div class="chip-text">Dryer Vent Cleaning</div>
+      <div class="chip-checkbox"></div>
+    </div>
+
+    <div class="ms-card-chip" data-value="Furnace Cleaning" onclick="toggleChip(this)">
+      <div class="chip-icon"></div>
+      <div class="chip-text">Furnace Cleaning</div>
+      <div class="chip-checkbox"></div>
+    </div>
+
+    <div class="ms-card-chip" data-value="HVAC System Cleaning" onclick="toggleChip(this)">
+      <div class="chip-icon"></div>
+      <div class="chip-text">HVAC System Cleaning</div>
+      <div class="chip-checkbox"></div>
+    </div>
+
+    <div class="ms-card-chip featured-chip" data-value="Full Package" onclick="toggleChip(this)">
+      <div class="chip-icon"></div>
+      <div class="chip-text">Full Complete Package</div>
+      <div class="chip-checkbox"></div>
+    </div>
+  </div>
+
+  <input type="hidden" id="fservice" value="">
+</div>
         <input class="finput" type="date" placeholder="Preferred Date" id="fdate" required>
         <textarea class="finput full" rows="3" placeholder="Additional notes or questions..." id="fnotes"></textarea>
         <button class="fsub full" onclick="handleBook(this)">Submit Appointment Request</button>
+<div class="form-or-divider">
+  <span>OR</span>
+</div>
+<a href="https://wa.me/14378899124" target="_blank" class="fsub full fsub-link">
+  Directly Message via WhatsApp
+</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="cta-band">
+<section class="cta-band" id="cta-band">
   <div class="container">
     <h2>Ready to Breathe <span>Cleaner Air?</span></h2>
     <p>Same day service available. Call or message us now.</p>
@@ -433,14 +620,21 @@
   <div class="footer-inner">
     <div>
       <div class="footer-brand"><span>Deluxe</span> Duct Cleaners</div>
-      <p style="font-size:.87rem;line-height:1.65;">Professional duct cleaning across Ontario. Clean air, healthy homes — since 2019.</p>
-      <div style="margin-top:16px;">
-        <a href="https://www.facebook.com/DeluxeDuct.Cleaners" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.6);text-decoration:none;font-weight:700;font-size:.86rem;transition:color .2s;" onmouseover="this.style.color='#1877f2'" onmouseout="this.style.color='rgba(255,255,255,.6)'">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          Follow on Facebook
+      <p style="font-size:.87rem;line-height:1.65; margin-bottom: 20px;">Professional duct cleaning across Ontario. Clean air, healthy homes — since 2019.</p>
+      
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/DeluxeDuct.Cleaners" target="_blank" class="social-btn btn-fb" title="Follow us on Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span>Facebook</span>
+        </a>
+
+        <a href="#" class="social-btn btn-ig" title="Follow us on Instagram" onclick="return false;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>Instagram</span>
         </a>
       </div>
     </div>
+    
     <div class="fcol">
       <h4>Services</h4>
       <ul>
@@ -461,8 +655,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2025 Deluxe Duct Cleaners. All rights reserved.</span>
-    <!-- <a href="alberta.html" class="loc-toggle" style="color:rgba(255,255,255,.5);text-decoration:none;font-weight:700;">&#8592; Change Province</a> -->
+    <span>&copy; 2026 Deluxe Duct Cleaners. All rights reserved.</span>
   </div>
 </footer>
 
