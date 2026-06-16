@@ -6,8 +6,21 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--dark);overflow-x:hidden;}
+/* Apply Inter globally to the entire website */
+:root {
+  --font-primary: 'Inter', sans-serif;
+}
 
+body {
+  font-family: 'Inter', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure form inputs, buttons, and textareas inherit Inter as well */
+input, select, textarea, button, .finput, .fsub {
+  font-family: 'Inter', sans-serif !important;
+}
 
 
 /* ── NAV ── */
@@ -627,6 +640,41 @@ body{font-family:'Nunito',sans-serif;background:var(--off);color:var(--dark);ove
 .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:3rem;color:#fff;line-height:1;}
 .stat-label{color:rgba(255,255,255,.88);font-weight:700;font-size:.86rem;margin-top:4px;}
 
+/* Responsive clean stacked grids for smaller tablets and mobile windows */
+@media (max-width: 768px) {
+  .stats-strip {
+    padding: 40px 24px !important;
+  }
+  
+  .stat-item {
+    min-width: 50%; /* Splits into a perfect 2x2 grid */
+    box-sizing: border-box;
+    padding: 20px 10px;
+  }
+  
+  /* ── THE OCD FIX ── */
+  /* Remove the vertical lines on the right side of the grid (2nd and 4th items) */
+  .stat-item:nth-child(2)::after,
+  .stat-item:nth-child(4)::after {
+    display: none !important;
+  }
+  
+  /* Optional: Add a subtle horizontal divider between the top row and bottom row */
+  .stat-item:nth-child(1)::before,
+  .stat-item:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent) !important;
+  }
+  
+  .stat-num {
+    font-size: 3rem !important;
+  }
+}
 /* ── PREMIUM SMOOTH AUTO-SCROLLING MARQUEE ── */
 .reviews-bg {
   background: var(--off);
