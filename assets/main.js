@@ -49,14 +49,13 @@ function handleBook(buttonElement) {
 
   // Basic validation check
   if (!name || !phone || !email || !service || !date) {
-    alert('Please fill out all required fields before submitting.');
-    return;
-  }
+  alert('Please fill out all fields and select at least one cleaning service.');
+  return;
+}
 
   // Construct a beautifully formatted message text
-  // *Text inside asterisks* becomes bold dynamically in WhatsApp
   const message =
-    `- *NEW APPOINTMENT REQUEST* 🚨\n\n` +
+    `- *NEW APPOINTMENT REQUEST* \n\n` +
     `-  *Customer Name:* ${name}\n` +
     `-  *Phone Number:* ${phone}\n` +
     `-  *Email:* ${email}\n` +
@@ -74,6 +73,18 @@ function handleBook(buttonElement) {
   window.open(whatsappUrl + `?text=${encodedMessage}`, '_blank');
 }
 
+// Dynamic Multi-Select Chip Toggle Handler
+function toggleChip(chipElement) {
+  // Toggle the active class visually
+  chipElement.classList.toggle('active');
+  
+  // Scrape values from all currently active card items
+  const activeChips = document.querySelectorAll('.ms-card-chip.active');
+  const selectedValues = Array.from(activeChips).map(chip => chip.getAttribute('data-value'));
+  
+  // Set the clean comma-delimited string right back into your submission input
+  document.getElementById('fservice').value = selectedValues.join(', ');
+}
 // ===== Scroll animations — hero excluded intentionally =====
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); observer.unobserve(e.target); } });
@@ -92,4 +103,19 @@ accordionItems.forEach(item => {
     // Add the active class to the newly clicked card
     item.classList.add('active');
   });
+});
+
+// ===== FIXED: Renamed to revealObserver to stop duplicate declaration error =====
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: .15
+});
+
+document.querySelectorAll('.reveal').forEach(el=>{
+  revealObserver.observe(el);
 });
