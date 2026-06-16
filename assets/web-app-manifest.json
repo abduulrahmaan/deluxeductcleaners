@@ -1,0 +1,31 @@
+{
+  "short_name": "Deluxe Duct",
+  "name": "Deluxe Duct Cleaners",
+  "description": "Professional residential and commercial air duct, furnace, and HVAC system cleaning services in Ontario & Alberta.",
+  "icons": [
+    {
+      "src": "/assets/favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/web-app-manifest-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/web-app-manifest-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#ffffff",
+  "theme_color": "#2e7dd1",
+  "display": "standalone",
+  "orientation": "portrait",
+  "id": "/?source=pwa"
+}
