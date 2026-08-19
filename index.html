@@ -24,6 +24,35 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css">
+
+<style>
+/* --- Province switcher dropdown --- */
+.loc-dropdown{position:relative;}
+.loc-dropdown .loc-toggle{cursor:pointer;background:none;border:none;font:inherit;display:inline-flex;align-items:center;gap:6px;padding:inherit;}
+.loc-caret{transition:transform .2s ease;flex-shrink:0;}
+.loc-dropdown.open .loc-caret{transform:rotate(180deg);}
+.loc-dropdown-menu{display:none;position:absolute;top:calc(100% + 10px);right:0;background:#fff;border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.18);min-width:210px;padding:6px;z-index:999;}
+.loc-dropdown.open .loc-dropdown-menu{display:block;}
+.loc-option{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;font-size:.9rem;font-weight:600;color:#1a1a1a;text-decoration:none;white-space:nowrap;}
+.loc-option:hover{background:rgba(0,0,0,.06);}
+.loc-option.active{background:rgba(46,125,209,.12);color:#2E7DD1;}
+.loc-option.active::after{content:"\2713";margin-left:auto;font-weight:800;}
+
+.sm-loc-label{padding:10px 4px 4px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;opacity:.55;font-weight:700;}
+.sm-loc-list{display:flex;flex-direction:column;gap:2px;}
+.sm-loc-option{display:flex;align-items:center;gap:8px;padding:10px 8px;border-radius:8px;font-weight:600;text-decoration:none;color:inherit;}
+.sm-loc-option:hover{background:rgba(0,0,0,.06);}
+.sm-loc-option.active{background:rgba(46,125,209,.14);color:#2E7DD1;}
+.sm-loc-option.active::after{content:"\2713";margin-left:auto;font-weight:800;}
+
+@media (max-width:900px){
+  .loc-dropdown-menu{right:-10px;min-width:200px;}
+}
+@media (max-width:520px){
+  .loc-dropdown .loc-toggle span{display:none;}
+  .loc-dropdown-menu{right:-90px;max-width:calc(100vw - 20px);}
+}
+</style>
 </head>
 <body>
 
@@ -43,12 +72,14 @@
     <a href="#cta-band" onclick="navigateMobile('cta-band');return false;">Contact Us</a>
 
     <div class="sm-divider"></div>
-    <div class="sm-loc-label">Switch State</div>
+    <div class="sm-loc-label">Switch Province</div>
     <div class="sm-loc-list">
-      <a href="index.html" class="sm-loc-option active">Ontario</a>
-      <a href="alberta.html" class="sm-loc-option">Alberta</a>
-      <a href="saskatchewan.html" class="sm-loc-option">Saskatchewan</a>
-      <a href="british-columbia.html" class="sm-loc-option">British Columbia</a>
+    <a href="index.html" class="sm-loc-option active"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Ontario</a>
+    <a href="alberta.html" class="sm-loc-option"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Alberta</a>
+    <a href="saskatchewan.html" class="sm-loc-option"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Saskatchewan</a>
+    <a href="british-columbia.html" class="sm-loc-option"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> British Columbia</a>
+    <a href="manitoba.html" class="sm-loc-option"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Manitoba</a>
+    <a href="saskatoon-regina.html" class="sm-loc-option"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Saskatoon & Regina</a>
     </div>
   </div>
   <div class="sm-footer">
@@ -74,14 +105,16 @@
     <div class="loc-dropdown" id="locDropdown">
       <button type="button" class="loc-toggle" onclick="toggleLocDropdown(event)" aria-haspopup="true" aria-expanded="false">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        Switch State
+        <span>Ontario</span>
         <svg class="loc-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
       </button>
       <div class="loc-dropdown-menu" id="locDropdownMenu" role="menu">
-        <a href="index.html" class="loc-option active" role="menuitem">Ontario</a>
-        <a href="alberta.html" class="loc-option" role="menuitem">Alberta</a>
-        <a href="saskatchewan.html" class="loc-option" role="menuitem">Saskatchewan</a>
-        <a href="british-columbia.html" class="loc-option" role="menuitem">British Columbia</a>
+    <a href="index.html" class="loc-option active" role="menuitem">Ontario</a>
+    <a href="alberta.html" class="loc-option" role="menuitem">Alberta</a>
+    <a href="saskatchewan.html" class="loc-option" role="menuitem">Saskatchewan</a>
+    <a href="british-columbia.html" class="loc-option" role="menuitem">British Columbia</a>
+    <a href="manitoba.html" class="loc-option" role="menuitem">Manitoba</a>
+    <a href="saskatoon-regina.html" class="loc-option" role="menuitem">Saskatoon & Regina</a>
       </div>
     </div>
     <a href="tel:+14378899124" class="btn-nav-call">+1 437-889-9124</a>
@@ -748,6 +781,18 @@
         <p style="font-size:.82rem;color:rgba(255,255,255,.6);margin-bottom:10px;">Vancouver, Victoria &amp; surrounding areas</p>
         <span style="color:#6DBD2C;font-weight:800;font-size:.85rem;">Go to BC Page &rarr;</span>
       </a>
+      <a href="manitoba.html" class="popup-pcard" onclick="sessionStorage.setItem('locationSelected','1')">
+        <span style="font-size:2.4rem;display:block;margin-bottom:10px;">🌊</span>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;color:#fff;margin-bottom:4px;">Manitoba</h3>
+        <p style="font-size:.82rem;color:rgba(255,255,255,.6);margin-bottom:10px;">Winnipeg, Brandon &amp; surrounding areas</p>
+        <span style="color:#6DBD2C;font-weight:800;font-size:.85rem;">Go to Manitoba Page &rarr;</span>
+      </a>
+      <a href="saskatoon-regina.html" class="popup-pcard" onclick="sessionStorage.setItem('locationSelected','1')">
+        <span style="font-size:2.4rem;display:block;margin-bottom:10px;">🌻</span>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;color:#fff;margin-bottom:4px;">Saskatoon &amp; Regina</h3>
+        <p style="font-size:.82rem;color:rgba(255,255,255,.6);margin-bottom:10px;">Saskatoon, Regina &amp; nearby communities</p>
+        <span style="color:#6DBD2C;font-weight:800;font-size:.85rem;">Go to Saskatoon &amp; Regina Page &rarr;</span>
+      </a>
     </div>
 
     <!-- Skip -->
@@ -772,5 +817,30 @@
 
 <script src="assets/location-popup.js"></script>
 <script src="assets/main.js"></script>
+<script>
+(function(){
+  var dropdown = document.getElementById('locDropdown');
+  if(!dropdown) return;
+  var btn = dropdown.querySelector('.loc-toggle');
+  window.toggleLocDropdown = function(e){
+    e.stopPropagation();
+    var isOpen = dropdown.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  };
+  document.addEventListener('click', function(e){
+    if(!dropdown.contains(e.target)){
+      dropdown.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      dropdown.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
